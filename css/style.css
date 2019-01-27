@@ -1,6 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;
-    font-size:16px;
+    font-size:15px;
      line-height: 1.8;
     color: #5a5a5a;
 }
@@ -71,12 +71,13 @@ i.fab.fa-instagram{
                         Navber css
 ====================================================*/
 .bg-light {
-    background-color:#ffffff!important;
+    background-color: #ffffff!important;
+    padding: 25px;
 }
 .navbar-light .navbar-nav .nav-link {
     color: black;
+    font-size: 20px;
 }
-
 /*
 =====================================================
                         Banner css
@@ -100,18 +101,16 @@ font-size:48px;
 .color{
 color:#fdc400;
 }
-.welcome-area-start h3{
-font-size:68px;
+.welcome-area-start h3 {
+    font-size: 82px;
 }
-
 
 /*
 =====================================================
                         Icon css
 ====================================================*/
-.icon-area{
- padding:20px 0px;
-
+.icon-area {
+    padding: 36px 0px;
 }
 i.far.fa-address-book {
     color:#fdc400;
@@ -168,6 +167,25 @@ span.list-content {
     padding-left: 15px;
 }
 
+
+/*
+=====================================================
+                        Choose css
+====================================================*/
+h2.text-center {
+    font-size: 60px;
+    line-height: 1.1;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    margin: 0;
+    padding-bottom: 20px;
+    color: #393939;
+    font-family: 'Roboto', sans-serif;
+}
+
+p.chooses-paragrap {
+    padding: 0px 157px;
+}
 /*
 =====================================================
                         Service css
@@ -182,7 +200,7 @@ section.service-area {
     font-size: 39px;
 }
 section.service-area h2.text-center {
-    font-size: 22px;
+    font-size:18px;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
     color: #393939;
@@ -222,6 +240,85 @@ h2.event-title.text-center {
     font-weight: bold;
     padding-bottom: 30px;
 }
+
+i.fas.fa-angle-right {
+    width: 40px;
+    height: 40px;
+    font-size: 21px;
+    background-color:white;
+    border: 4px solid #fdc400;
+    text-align: center;
+    border-radius: 100%;
+    float: left;
+    /* padding-right: 10px; */
+    margin-right: 10px;
+    color: white;
+    padding-top: 4px;
+    color:#fdc400
+}
+span.comment {
+    float: right;
+    margin-top: -4px;
+}
+.container1 h4 {
+    margin-top: 15px;
+    font-weight: bold;
+}
+.container1 {
+    padding: 18px;
+}
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    /* border: 1px solid rgba(0,0,0,.125); */
+    border-radius: .25rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+/*
+=====================================================
+                        Customer css
+====================================================*/
+section.customers{
+  background-image: url("../img/customer.jpeg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+h2.customer-title {
+    color: white;
+    font-size: 59px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+.test {
+    color: white;
+    text-align: center;
+    font-size: 22px;
+}
+
+.owl-carousel.owl-theme.owl-loaded.owl-drag {
+    border: 2px solid #fdc400;
+  padding:28px;
+    margin: 26px;
+}
+h3 {
+    color: #fdc400;
+}
 /*
 =====================================================
                         Footer css
@@ -230,11 +327,15 @@ h2.event-title.text-center {
 .col_white_amrc {
     color:#FFF;
 }
-footer { width:100%;
-     background-color:#263238;
-      min-height:250px;
-      padding:10px 0px 25px 0px ;
-    }
+
+footer {
+    width: 100%;
+    background-color: #263238;
+    min-height: 250px;
+    padding: 10px 0px 25px 0px;
+    margin-top: 50px;
+    border-top: 8px solid #fdc400;
+}
 .pt2 {
     padding-top:40px ;
      margin-bottom:20px ;
@@ -327,4 +428,44 @@ footer p {
       width:20px;
        height:20px;
        text-align:center;
+    }
+
+
+
+
+
+    .footer-list ul li a{
+        text-decoration: none;
+        color: #222222;
+        font-weight: bold;
+        font-size: 12px;
+
+    }
+
+
+    .backtotop_button_wrap {
+        width:100%;
+        background:white;
+        height:auto;
+    }
+    #toTop {
+        display:none;
+        position: fixed;
+        right:0;
+        bottom:0;
+        width:100px;
+        height:auto;
+        float:right;
+        padding:10px;
+        text-align:center;
+        line-height:12px;
+    }
+    #toTop i{
+        width: 40px;
+        height: 40px;
+        padding-top: 10px;
+        font-size: 66px;
+        color: #ffffff;
+        font-size: 22px;
+        background-color:#888888;
     }
