@@ -87,8 +87,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light{
     color: black;
     font-size: 20px;
 }
-div#test.positionFixed {
-    /* background-color: black; */
+/*div#test.positionFixed {
     position: fixed;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
@@ -97,7 +96,31 @@ div#test.positionFixed {
     height: 74px;
     z-index: 9999;
     width: 100%;
+}*/
+
+.floatingHeader {
+    position: fixed;
+    top: -75px;
+    width: 100%;
+    background: white;
+    z-index: 99;
+    display: block;
+
+    -webkit-transition: top .3s ease-out;
+      -moz-transition: top .3s ease-out;
+      -o-transition: top .3s ease-out;
+      transition: top .3s ease-out;
 }
+
+.floatingHeaderFixed {
+    top: 0px;
+}
+
+.floatingHeader .bg-light {
+    padding: 10px;
+}
+
+
 /*
 =====================================================
                         Banner css
