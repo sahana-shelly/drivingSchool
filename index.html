@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Driving School</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -39,47 +39,37 @@
                     Navbar area start
 =============================================== !---->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <a class="navbar-brand" href="#"><img src="./img/logo3.png" width="150px" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<div id="test">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./img/logo3.png" width="150px" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT US</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">PROGRAMS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">FAQS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">BLOG</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT</a>
-                </li>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
 
 
-            </ul>
+                </ul>
 
-        </div>
+            </div>
 
-    </div><!-- container end -->
-</nav>
+        </div><!-- container end -->
+    </nav>
+</div>
 
 <!-- ===========================================
                     Banner area start
 =============================================== !---->
 <section class="banner">
-    <img src="./img/banner.jpg" width="100%" height="550px;" alt="banner-photo">
+    <img src="./img/slide-01.jpg" width="100%" height="550px;" alt="banner-photo">
 
 </section>
 
@@ -103,7 +93,7 @@
                 <div class="media">
                     <i class="far fa-address-book"></i>
                     <div class="media-body">
-                        <span>28</span>
+                        <span class="number">28</span>
                         <h5 class="mt-0">Teachers</h5>
                     </div>
                 </div>
@@ -112,8 +102,8 @@
                 <div class="media">
                     <i class="far fa-address-book"></i>
                     <div class="media-body">
-                        <span>28</span>
-                        <h5 class="mt-0">Teachers</h5>
+                        <span class="number">1290</span>
+                        <h5 class="mt-0">Training Hours</h5>
                     </div>
                 </div>
             </div><!-- col-md-3 -->
@@ -121,8 +111,8 @@
                 <div class="media">
                     <i class="far fa-address-book"></i>
                     <div class="media-body">
-                        <span>28</span>
-                        <h5 class="mt-0">Teachers</h5>
+                        <span class="number">5</span>
+                        <h5 class="mt-0">Working Years</h5>
                     </div>
                 </div>
             </div><!-- col-md-3 -->
@@ -130,8 +120,8 @@
                 <div class="media">
                     <i class="far fa-address-book"></i>
                     <div class="media-body">
-                        <span>28</span>
-                        <h5 class="mt-0">Teachers</h5>
+                        <span class="number">5000+</span>
+                        <h5 class="mt-0">Licenses Issued</h5>
                     </div>
                 </div>
             </div><!-- col-md-3 -->
@@ -190,7 +180,7 @@
                     <p>Book our lessons with us now and meet your personal driving instructor</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="./img/road-sign.jpg" alt="">
+                    <img src="./img/road-sign.jpg" class="road-img" alt="">
                 </div>
             </div><!--row end -->
         </div><!-- box --->
@@ -224,6 +214,45 @@
     </div><!-- container end -->
 </section><!-- progrm end -->
 
+
+<!-- ===========================================
+                 Our Programs start
+=============================================== !---->
+
+<section class="our-program">
+    <div class="container">
+        <h2 class="our-program-title">Our Programs</h2>
+        <div class="owl-carousel owl-theme">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="our-client">
+                        <img src="./img/blog/blog1.jpeg" alt="">
+                        <h6>Stick Shift Lessons</h6>
+                        <span class="btn">MORE INFO</span>
+                    </div>
+                </div><!-- col-md- 4 end-->
+                <div class="col-md-4">
+                    <div class="our-client">
+                        <img src="./img/blog/blog1.jpeg" alt="">
+                        <h6>Stick Shift Lessons</h6>
+                        <span class="btn">MORE INFO</span>
+                    </div>
+                </div><!-- col-md- 4 end-->
+                <div class="col-md-4">
+                    <div class="our-client">
+                        <img src="./img/blog/blog1.jpeg" alt="">
+                        <h6>Stick Shift Lessons</h6>
+                        <span class="btn">MORE INFO</span>
+                    </div>
+                </div><!-- col-md- 4 end-->
+            </div><!-- owl carousel end -->
+
+        </div><!-- row end -->
+
+    </div><!-- container end -->
+
+</section>
+
 <!-- ===========================================
                   Service area start
 =============================================== !---->
@@ -238,7 +267,7 @@
                         <i class="fas fa-address-book"></i>
                     </div>
                     <h2 class="text-center">BEST SAFETY MEASURES</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
                 </div>
             </div><!-- col-md-4 end -->
             <div class="col-md-4">
@@ -247,7 +276,7 @@
                         <i class="fas fa-address-book"></i>
                     </div>
                     <h2 class="text-center">BEST SAFETY MEASURES</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
                 </div>
             </div><!-- col-md-4 end -->
             <div class="col-md-4">
@@ -256,7 +285,7 @@
                         <i class="fas fa-address-book"></i>
                     </div>
                     <h2 class="text-center">BEST SAFETY MEASURES</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
                 </div>
             </div><!-- col-md-4 end -->
             <div class="col-md-4">
@@ -318,7 +347,7 @@
                     </div>
                     <div class="test">
                         <span class="custom-icon" style="color:#fdc400;">*****</span>
-v
+                        v
 
                         <div class="test-paragrap"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut unde modi rerum tenetur blanditiis quo<br> quibusdam quia tempora nesciunt.</p></div>
                         <h3>SahanaShelly</h3>
@@ -382,7 +411,7 @@ v
             <div class="col-md-4">
 
                 <div class="card">
-                    <img src="./img/car1.jpeg" width="100%" class="event-img"  alt="">
+                    <img src="./img/blog/blog1.jpeg" width="100%" class="event-img"  alt="">
                     <div class="container1">
                         <h4>BEST SAFETY MEASURES</h4>
                         <p>In order to learn proper road rules and as quickly as possible you can trust Irving Driving Academy who happens to have become people’s first choice for enhancing their driving skills. Contact us now to book your driving lessons today at driving school in Irving Texas where we are committed to making </p>
@@ -393,7 +422,7 @@ v
             <div class="col-md-4">
 
                 <div class="card">
-                    <img src="./img/car1.jpeg" width="100%" class="event-img" alt="">
+                    <img src="./img/blog/blog2.jpeg" width="100%" class="event-img" alt="">
                     <div class="container1">
                         <h4>BEST SAFETY MEASURES</h4>
                         <p>In order to learn proper road rules and as quickly as possible you can trust Irving Driving Academy who happens to have become people’s first choice for enhancing their driving skills. Contact us now to book your driving lessons today at driving school in Irving Texas where we are committed to making </p>
@@ -405,7 +434,7 @@ v
             <div class="col-md-4">
 
                 <div class="card">
-                    <img src="./img/car1.jpeg" width="100%" class="event-img"  alt="">
+                    <img src="./img/blog/blog3.jpeg" width="100%" class="event-img"  alt="">
                     <div class="container1">
                         <h4>BEST SAFETY MEASURES</h4>
                         <p>In order to learn proper road rules and as quickly as possible you can trust Irving Driving Academy who happens to have become people’s first choice for enhancing their driving skills. Contact us now to book your driving lessons today at driving school in Irving Texas where we are committed to making </p>
