@@ -1,8 +1,11 @@
 body{
-    font-family: 'Roboto', sans-serif;
-    font-size:15px;
-     line-height: 1.8;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
     color: #5a5a5a;
+    background: #ffffff;
+    overflow-x: hidden;
+    font-weight: 400;
 }
 /*
 =====================================================
@@ -70,6 +73,12 @@ i.fab.fa-instagram{
 =====================================================
                         Navber css
 ====================================================*/
+nav.navbar.navbar-expand-lg.navbar-light.bg-light{
+    position: relative;
+    min-height: 50px;
+    margin-bottom:none;
+    border: 1px solid transparent;
+}
 .bg-light {
     background-color: #ffffff!important;
     padding: 25px;
@@ -77,6 +86,17 @@ i.fab.fa-instagram{
 .navbar-light .navbar-nav .nav-link {
     color: black;
     font-size: 20px;
+}
+div#test.positionFixed {
+    /* background-color: black; */
+    position: fixed;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    background-color: #000000;
+    color: red;
+    height: 74px;
+    z-index: 9999;
+    width: 100%;
 }
 /*
 =====================================================
@@ -87,7 +107,7 @@ section.banner {
 }
 .welcome-area-start {
     position: absolute;
-    top: 0;
+    top:0;
     left: 0;
     width: 100%;
     text-align: center;
@@ -96,7 +116,11 @@ section.banner {
     font-weight: bold;
 }
 .welcome-area-start h2{
-font-size:48px;
+    font-size: 48px;
+    margin-top:0px;
+    line-height: 109px;
+    font-family: 'Roboto', sans-serif;
+
 }
 .color{
 color:#fdc400;
@@ -110,7 +134,7 @@ color:#fdc400;
                         Icon css
 ====================================================*/
 .icon-area {
-    padding: 36px 0px;
+    padding: 45px 0px;
 }
 i.far.fa-address-book {
     color:#fdc400;
@@ -119,6 +143,7 @@ i.far.fa-address-book {
     margin-right: 11px;
 }
 section.icon-area {
+    background: url(../img/tt-promo-03.jpg) 0 0 repeat;
     background-color:#263238;
 }
 .media-body {
@@ -129,6 +154,19 @@ section.icon-area {
     margin-top: -12px;
 }
 
+.number{
+    font-size: 38px;
+    line-height: 1.1;
+    font-weight: 500;
+}
+
+h5.mt-0 {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 18px;
+    line-height: 1.1;
+}
+
 /*
 =====================================================
                         Cer Content css
@@ -137,6 +175,12 @@ section.icon-area {
 section.car-content {
     margin-top: 50px;
     padding-bottom: 30px;
+}
+
+
+img.road-img {
+    width: 100%;
+    height: 339px;
 }
 
 /*
@@ -186,6 +230,48 @@ h2.text-center {
 p.chooses-paragrap {
     padding: 0px 157px;
 }
+
+/*
+=====================================================
+                       Our Program css
+====================================================*/
+section.our-program {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    transform: rotate(30deg);
+}
+h2.our-program-title {
+    text-align: center;
+    font-size: 63px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.our-client h6 {
+    text-align: center;
+    margin-top: 96px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+span.btn {
+    padding: 15px 58px;
+    background-color: gray;
+    color: white;
+    transition-timing-function: linear;
+    /* margin: 0 auto; */
+    /* display: flex; */
+    margin-left: 76px;
+    margin-top: 10px;
+    border-radius: 12px;
+}
+span.btn:hover{
+    background-color:#fdc400;
+}
+
 /*
 =====================================================
                         Service css
@@ -202,12 +288,12 @@ section.service-area {
 section.service-area h2.text-center {
     font-size:18px;
     font-weight: 500;
-    font-family: 'Roboto', sans-serif;
     color: #393939;
     margin: 7px 0 0 0;
     padding: 0 10px;
     padding-bottom: 5px;
     padding-top: 30px;
+    font-family: 'Roboto', sans-serif;
 }
 .service-box i.fas.fa-address-book {
     color: #fdc400;
@@ -239,13 +325,14 @@ h2.event-title.text-center {
     font-size: 46px;
     font-weight: bold;
     padding-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
 }
 
 i.fas.fa-angle-right {
     width: 40px;
     height: 40px;
     font-size: 21px;
-    background-color:white;
+    background-color: white;
     border: 4px solid #fdc400;
     text-align: center;
     border-radius: 100%;
@@ -253,8 +340,10 @@ i.fas.fa-angle-right {
     /* padding-right: 10px; */
     margin-right: 10px;
     color: white;
-    padding-top: 4px;
-    color:#fdc400
+    padding-top: 7px;
+    padding-left: 5px;
+    text-align: center;
+    color: #fdc400;
 }
 span.comment {
     float: right;
@@ -303,6 +392,7 @@ h2.customer-title {
     text-align: center;
     font-weight: bold;
     padding-top: 50px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .test {
@@ -312,12 +402,50 @@ h2.customer-title {
 }
 
 .owl-carousel.owl-theme.owl-loaded.owl-drag {
-    border: 2px solid #fdc400;
   padding:28px;
     margin: 26px;
 }
-h3 {
-    color: #fdc400;
+
+
+/*
+=======================================================
+                        contact from
+======================================================
+*/
+section.contact {
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+section.contact h2 {
+    font-size: 43px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+button.buttonbtn.btn-primary {
+    padding: 18px 83px;
+    background-color: gray;
+    border: none;
+    font-size: 22px;
+}
+
+.from-list li {
+    list-style: none;
+    line-height: 41px;
+}
+i.fab.fa-accusoft {
+      padding-right: 8px;
+      font-size: 36px;
+      color:#fdc400
+}
+i.fas.fa-phone-volume{
+    padding-right: 8px;
+     font-size: 36px;
+     color:#fdc400
+}
+i.far.fa-clock{
+ padding-right: 8px;
+  font-size: 36px;
+  color:#fdc400
 }
 /*
 =====================================================
@@ -329,6 +457,7 @@ h3 {
 }
 
 footer {
+    background: url(../img/tt-promo-03.jpg) 0 0 repeat;
     width: 100%;
     background-color: #263238;
     min-height: 250px;
@@ -388,7 +517,7 @@ footer p {
     }
 
 .bottom_border {
-     border-bottom:1px solid #323f45;
+     border-bottom:1px solid #ffffff;
       padding-bottom:20px;
     }
 .foote_bottom_ul_amrc {
@@ -410,26 +539,34 @@ footer p {
 
 .social_footer_ul {
      display:table;
-      margin:15px auto 0 auto;
+      margin:33px auto 0 auto;
        list-style-type:none;
      }
 .social_footer_ul li {
     padding-left:20px;
     padding-top:10px;
      float:left;
+
+     width: 100px;
+     height: 100px;
+     -ms-transform: rotate(20deg);
+     -webkit-transform: rotate(20deg);
+     transform: rotate(45deg);
+     padding-bottom: 20px;
+         margin: 0 auto;
     }
 .social_footer_ul li a {
-     color:#CCC;
-      border:1px solid #CCC;
-       padding:8px;
-       border-radius:50%;
+    background-color:#fdc400;
+    color:black;
+    padding: 15px;
+
     }
 .social_footer_ul li i {
       width:20px;
        height:20px;
        text-align:center;
+      font-size: 22px;
     }
-
 
 
 
